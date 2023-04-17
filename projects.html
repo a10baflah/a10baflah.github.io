@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Digital Portfolio</title>
+    <title>My Projects</title>
     <style>
       /* add your own CSS styles here */
       nav {
@@ -32,11 +32,25 @@
       nav li a:hover {
         background-color: #111;
       }
+
+      .project {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      .project h3 {
+        margin-top: 0;
+      }
+
+      .project p {
+        margin-bottom: 0;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>My Name</h1>
+      <h1>My Projects</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -47,8 +61,25 @@
       </nav>
     </header>
     <main>
-      <h2>Welcome to My Digital Portfolio</h2>
-      <p>This is the homepage of my portfolio. Use the navigation bar to explore my website.</p>
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of project 1.</p>
+        <p>Technologies used: HTML, CSS, JavaScript</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of project 2.</p>
+        <p>Technologies used: React, Node.js, MongoDB</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <p>Description of project 3.</p>
+        <p>Technologies used: Python, Flask, MySQL</p>
+        <a href="#">View Project</a>
+      </div>
     </main>
     <footer>
       <p>&copy; Your Name</p>
