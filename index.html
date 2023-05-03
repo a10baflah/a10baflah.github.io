@@ -4,19 +4,32 @@
     <title>My Digital Portfolio</title>
     <style>
       /* add your own CSS styles here */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #fff8dc;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+      }
       img {
-        max-width: 100%;
-        height: auto;
+        max-width: 80%;
         display: block;
         margin: 10px auto;
-        border: 2px solid #ccc;
-        border-radius: 2px;
+        border: 3px solid #ccc;
+        border-radius: 5px;
         
       }
       nav {
         background-color: #333;
         border-bottom: 1px solid #ccc;
-        padding: 10px 20px;
+        padding: 10px 10px;
       }
 
       nav ul {
@@ -42,14 +55,27 @@
       nav li a:hover {
         background-color: #111;
       }
+      .column {
+        float: left;
+        width: 20.33%;
+        padding: 3px;
+      }
+
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Abdulrahman Baflah </h1>
+      <h1>Welcome </h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="life.html">Life</a></li>
           <li><a href="about.html">Resume</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -57,17 +83,23 @@
       </nav>
     </header>
     <main>
-      <h2>Welcome to My Digital Portfolio</h2>
+      <h2>Abdulrahman Baflah</h2>
       <p>
         Hello, and welcome to my about me page! My name is Abdulrahman Baflah,
          and I am a computer science student with a passion for technology and a dream of landing a job 
          in the industry. I earned a KGSP scholarship which is one of the most 
-         prestigious scholarships in the kingdom of saudi arabia. This portfolio is made with the 
+         prestigious scholarships in the kingdom of Saudi Arabia. This portfolio is made with the 
          purpose of enhancing my professional image and in hopes to get whoever visits my website to 
          contact me about an offer or business plans.
       </p>
-      <img src="images/PersonalPhoto.jpg" alt="professional">
-      <img src="images/beachPhoto.jpeg" alt="Fun">
+      <div class="row">
+        <div class="column">
+          <img src="images/PersonalPhoto.jpg" alt="professional">
+        </div>
+        <div class="column">
+          <img src="images/beachPhoto.jpeg" alt="Fun">
+        </div>
+      </div>
     </main>
     <footer>
       <p>&copy; Abdulrahman Baflah</p>
